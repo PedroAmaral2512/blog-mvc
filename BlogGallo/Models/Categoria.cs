@@ -9,5 +9,12 @@ public class Categoria
     [Required]
     [StringLength(30)]
     public string Nome { get; set; }
-}
 
+    public Categoria(){}
+
+    public Categoria(int id, string nome)
+    {
+        Id = id;
+        Nome = nome;
+    }
+}
